@@ -1,0 +1,63 @@
+<!--------------------------------->
+<style>
+.flip-container { perspective: 1000; }  	
+
+.flip-container:hover .flipper, .flip-container.hover .flipper {  		
+  transform: rotateY(180deg);  	
+}    
+.flip-container, .front, .back {  	
+  width: 320px;  	
+  height: 480px;  
+}
+
+.flipper {  	
+  transition: 0.6s;  	
+  transform-style: preserve-3d;    	
+  position: relative;  
+}
+
+.front, .back {  	
+  backface-visibility: hidden;    	
+  position: absolute;  	
+  top: 0;  	
+ left: 0;  
+}
+
+.front { z-index: 2;  }    
+
+.back { transform: rotateY(180deg); }
+
+</style>
+<div> 
+
+<img src="2.png" width="100" <sup><img src="eco.png" width="100"</sup>
+	
+      <!-- Conteúdo do verso -->  		
+    </div>  
+	
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">  	
+  <div class="flipper">  		
+    <div class="front">  
+<img src="sabia.jpg"/ width="300">	
+      <!-- Conteúdo da frente -->  		
+    </div>  		
+    <div class="back">  
+<img src="info.png"/><p><img src="arvore.jpg" width="300"/>	
+      <!-- Conteúdo do verso -->  		
+    </div>  		
+  </div>  
+</div>
+  
+  <body> CRIADO POR MARCOS RIQUETTA PARA TESTE NO DOCKER </body>
+<!-------------------------------->
+
+
+
+
+
+
+
+
+
+
+
